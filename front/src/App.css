@@ -15,7 +15,9 @@
   
 }
 .main{
-  height: 80vh;
+  height: auto;
+  margin: 0 4.5%;
+  margin-top: 20px;
 }
 .cartnavitem{
   padding: 0 20px;
@@ -25,4 +27,40 @@
 }
 .usericon{
   margin:  -3px 10px 0 10px;
+}
+.footerbody{
+  width: 100%;
+  display: flex;
+}
+.homescreen{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+#textprod{
+  text-decoration: none;
+  color: black;
+
+}
+.show{
+  display:inline;
+  flex-direction: row;
+
+}
+.hide{
+  display: none;
+  flex-direction: row;
+}
+#halfstar{
+  font-size: .9rem;
+  color: #f8e825;
+}
+#rate{
+  color: #f8e825;
+}
+.rating{
+  margin-right: 20px;
+}
+.numrev{
+  margin-left: 20px;
 }
