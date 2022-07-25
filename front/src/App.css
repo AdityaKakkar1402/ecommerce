@@ -1,0 +1,28 @@
+.navitem{
+  display: flex;
+
+}
+#navbarmain{
+  display: flex;
+}
+#navleftitem{
+  display: flex;
+  flex: 50;
+}
+#navrightitems{
+  display: flex;
+  justify-content: center;
+  
+}
+.main{
+  height: 80vh;
+}
+.cartnavitem{
+  padding: 0 20px;
+}
+.carticon{
+  margin:  -3px 10px 0 10px;
+}
+.usericon{
+  margin:  -3px 10px 0 10px;
+}
