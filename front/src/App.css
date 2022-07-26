@@ -8,19 +8,24 @@
 #navleftitem{
   display: flex;
   flex: 50;
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 2rem;
 }
-#navrightitems{
-  display: flex;
-  justify-content: center;
+
+.navrightitems{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 20px;
   
 }
-.main{
-  height: auto;
-  margin: 0 4.5%;
-  margin-top: 20px;
+.navrightitems:hover{
+  color: bisque;
 }
 .cartnavitem{
-  padding: 0 20px;
+
+
 }
 .carticon{
   margin:  -3px 10px 0 10px;
@@ -28,20 +33,9 @@
 .usericon{
   margin:  -3px 10px 0 10px;
 }
-.footerbody{
-  width: 100%;
-  display: flex;
-}
-.homescreen{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-#textprod{
-  text-decoration: none;
-  color: black;
 
-}
+
+
 .show{
   display:inline;
   flex-direction: row;
@@ -58,9 +52,123 @@
 #rate{
   color: #f8e825;
 }
-.rating{
-  margin-right: 20px;
+.homescreen{
+  margin:  2vh 4.8vw;
 }
-.numrev{
-  margin-left: 20px;
+.cardproduct{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
 }
+.prod{
+  display: flex;
+  flex-direction: row;
+  margin: 1vw;
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+.prodcontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+
+  
+}
+.prodlink{
+  text-decoration: none;
+}
+.cardprodtitle{
+  text-decoration: none;
+  color: black;
+}
+.cardrev{
+  color: black;
+}
+#textprod{
+  color: black;
+}
+#prodpagebtnback{
+  margin-left: 3vw;
+  margin-top: 2vh;
+}
+.productpagedetail{
+  display: flex;
+  margin-top: 2vh;
+}
+.productpagedis{
+  display: flex;
+  flex-direction: column;
+  
+}
+.productpage{
+  margin:  2vh 5vh;
+}
+.productpageimage{
+  width: 70vw;
+  margin: 0 3vw;
+  border: 1px solid black;
+  padding: 10px;
+
+}
+.productpagedescription{
+  font-size: 1.2rem;
+
+}
+.productpageprice{
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.productpagebrand{
+  font-weight: 700;
+  font-size: 1.3;
+}
+.productpagetitle{
+  font-size: 3rem;
+  font-weight: 600;
+  padding:  0 3vw;
+
+}
+@media (max-width:1000px) {
+  .productpagedetail{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+  }
+  .productpageimage{
+    width: 50vw;
+    margin: 2vw;
+  
+  }
+  .productpagedis{
+    margin-top: 20px;
+    
+  }
+  
+  
+}
+.productpagebutton{
+  background-color: black;
+  color: aliceblue;
+  border: none;
+  width: 160px;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+#prodbuttonhide{
+  background-color: gray;
+}
+
+
+
+
+
