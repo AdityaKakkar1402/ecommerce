@@ -8,19 +8,24 @@
 #navleftitem{
   display: flex;
   flex: 50;
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 2rem;
 }
-#navrightitems{
-  display: flex;
-  justify-content: center;
+
+.navrightitems{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 20px;
   
 }
-.main{
-  height: auto;
-  margin: 0 4.5%;
-  margin-top: 20px;
+.navrightitems:hover{
+  color: bisque;
 }
 .cartnavitem{
-  padding: 0 20px;
+
+
 }
 .carticon{
   margin:  -3px 10px 0 10px;
@@ -28,20 +33,9 @@
 .usericon{
   margin:  -3px 10px 0 10px;
 }
-.footerbody{
-  width: 100%;
-  display: flex;
-}
-.homescreen{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-#textprod{
-  text-decoration: none;
-  color: black;
 
-}
+
+
 .show{
   display:inline;
   flex-direction: row;
@@ -58,9 +52,45 @@
 #rate{
   color: #f8e825;
 }
-.rating{
-  margin-right: 20px;
+.homescreen{
+  margin:  2vh 4.8vw;
 }
-.numrev{
-  margin-left: 20px;
+.cardproduct{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
 }
+.prod{
+  display: flex;
+  flex-direction: row;
+  margin: 1vw;
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+.prodcontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+
+  
+}
+.prodlink{
+  text-decoration: none;
+}
+.cardprodtitle{
+  text-decoration: none;
+  color: black;
+}
+.cardrev{
+  color: black;
+}
+#textprod{
+  color: black;
+}
+
+
+
+
