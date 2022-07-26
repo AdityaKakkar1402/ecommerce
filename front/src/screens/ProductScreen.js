@@ -1,14 +1,27 @@
+import axios from 'axios'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import Rating from '../component/Rating'
-import products from '../products'
+import { useState,useEffect } from 'react'
 
 
-const ProductScreen = () => {
+const ProductScreen = ({match}) => {
     const params=useParams();
     const {id}=params;
-    const product=products.find((p)=>p._id===id)
+    // console.log(id)
+
+    // const product=products.find((p)=>p._id===id)
+
+    const [product,setProduct]=useState([])
+    useEffect(()=>{
+        const fetchProduct =async()=>{
+            const {data}=await axios.get(`/api/products/`+id)
+            setProduct(data)
+        }
+        fetchProduct()
+
+    })
   
     return (
         <>
@@ -21,7 +34,7 @@ const ProductScreen = () => {
                </div>
                <div className="productpagedetail">
                    <div className="productpageimage">
-                       <img src={product.image} alt="k" srcset="" />
+                       <img src={product.image} srcSet="" alt="k" />
                    </div>
                    <div className="productpagedis" id="productpagedis">
                        <div className="productpagedescription">{product.description}</div>

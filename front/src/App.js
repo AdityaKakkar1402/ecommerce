@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import ProductScreen from './screens/ProductScreen';
 
+
 function App() {
   return (
     <div className="App">
@@ -19,7 +20,7 @@ function App() {
         
 
         <Route path="/" element={<Homescreen/>}/>
-        <Route path="/product/:id" element={<ProductScreen/>}/>
+        <Route path="/product/:id" element={<ProductScreen/>} />
 
 
         
